@@ -39,7 +39,6 @@
         </div>
         <ul class="navLinks ">
             <li><a href="#about">About Me</a></li>
-            <li><a href="#stack">My Skills</a></li>
             <li><a href="#project">Portfolio</a></li>
             <li><a href="mailto:nwokovictor1@gmail.com">Hire Me</a></li>
             <li class="nav_item active">
@@ -54,7 +53,6 @@
         <img src="./assets/nova-logo.png" class="nav_logo">
         <ul class="nav-item">
             <li><a href="#about">About Me</a></li>
-            <li><a href="#stack">My Skills</a></li>
             <li><a href="#project">Portfolio</a></li>
             <li><a href="#footer" class="nav-btn">Hire Me</a></li>
             <li class="nav_item active"><a href="./resume.html">My resume</a></li>
@@ -65,40 +63,17 @@
         <img src="./assets/profile-img.png" class="profile-img">
         <div class="profile-text">
             <h1>Hi<span>!</span>, I'm Victor</h1>
-            <h2>Self-taught Frontend Developer</h2>
+            <h2 class="sub-head">Frontend Developer</h2>
             <p> Open to entry level role / paid internships
             </p>
-            <div class="btn-wrap"><a href="mailto: https://nwokovictor1@gmail.com" class="header-btn btn">Hire Me</a>
+            <div class="btn-wrap"><a href="mailto: nwokovictor1@gmail.com" class="header-btn btn">Hire Me</a>
                 <a href="#project" class="header-btn btn">Portfolio</a>
             </div>
 
         </div>
     </section>
-    <!-- about me section -->
-    <section id="about" class="hidden container">
-        <h2 class="section-head"><span>01.</span>
-            About Me
-        </h2>
-        <div class="about-wrapper sub-container">
-            <div class="about-text">
-                <h3 class="sub-head">Design</h3>
-                <p>I use tools like <a href="http://www.canva.com"
-                        style="color: var(--white); text-decoration: underline;">canva</a> to convert my ideas
-                    to design if i don't have one.
-                    behance, dribble and other design sharing apps has also helped in my my design process</p>
-            </div>
-            <div class="about-text">
-                <h3 class="sub-head">Execution </h3>
-                <p>Most times I plan on how a particular design can be best executed using the tools i have.
-                    I also love to toggle css properties until the results are pleasing to the eyes.
-                </p>
-            </div>
-        </div>
-    </section>
+
     <section id="stack" class="stack-wrapper hidden container">
-        <h2 class="section-head"><span>02.</span>
-            Tech Stack And Tools
-        </h2>
         <div class="stack sub-container">
             <div class="stack-items">
                 <p>HTML</p>
@@ -141,7 +116,7 @@
                 </div>
             </div>
             <div class="stack-items">
-                <p>Dev Tools</p>
+                <p>DOM</p>
                 <div class="stack-rating">
                     <div class="rating hidden"></div>
                     <div class="rating hidden"></div>
@@ -151,7 +126,7 @@
                 </div>
             </div>
             <div class="stack-items">
-                <p>Canva</p>
+                <p>Dev Tools</p>
                 <div class="stack-rating">
                     <div class="rating hidden"></div>
                     <div class="rating hidden"></div>
@@ -162,14 +137,46 @@
             </div>
         </div>
     </section>
+    <!-- about me section -->
+    <section id="about" class="hidden container">
+        <h2 class="section-head">
+            About Me
+        </h2>
+        <div class="about-wrapper sub-container">
+            <div class="about-text">
+                <h3 class="sub-head">Design</h3>
+                <p>I use tools like <a href="http://www.canva.com"
+                        style="color: var(--white); text-decoration: underline;">canva</a> to convert my ideas
+                    to design if i don't have one.
+                    behance, dribble and other desigcess</p>
+            </div>
+            <div class="about-text">
+                <h3 class="sub-head">Execution </h3>
+                <p>Most times I plan on how a particular design the results are pleasing to the eyes.
+                </p>
+            </div>
+            <div class="about-text">
+                <h3 class="sub-head">Execution </h3>
+                <p>Most times I plan on how a particular design can be best executed using the tools i have.
+                    I also love to tweak css values until the results are pleasing to the eyes.
+                </p>
+            </div>
+            <div class="about-text">
+                <h3 class="sub-head">Execution </h3>
+                <p>Most times I plan on how a particular design can be best executed using the tools i have.
+                    I also love to toggle css properties until the results are pleasing to the eyes.
+                </p>
+            </div>
+        </div>
+    </section>
     <section id="project" class="work hidden container">
-        <h2 class="section-head"><span>03.</span>
+        <h2 class="section-head">
             Portfolio
         </h2>
         <div class="sub-container">
             <div id="row-one" class="row active-page project-wrapper">
 
-                <div class="project-link sub-container">
+                <div class="project-link sub-container hidden">
                     <div class="project-img space-img disp-img">
                         <div class="overlay-link">
                             <a href="#">Github</a>
@@ -181,9 +188,24 @@
                         <p class="project-description">have an in-depth space experience
                             with this multi-page website, exploring space has never been this faster.
                         </p>
+                        <ul class="project-info">
+                            <ul class="tools-wrap">
+                                <li class="sub-head">
+                                    <div class="dot"></div>HTML
+                                </li>
+                                <li class="sub-head">
+                                    <div class="dot"></div>CSS
+                                </li>
+                                <li class="sub-head">
+                                    <div class="dot"></div>JAVASCRIPT
+                                </li>
+                            </ul>
+                            <a href="http://" class="btn">live site</a>
+
+                        </ul>
                     </div>
                 </div>
-                <div class="project-link sub-container alt">
+                <div class="project-link sub-container alt hidden">
                     <div class="project-img cmjbanner-img disp-img">
                         <div class="overlay-link">
                             <a href="#">Github</a>
@@ -194,24 +216,54 @@
                         <h2 class="project-title sub-head">Interior Design Demo</h2>
                         <p class="project-description">An Interior Design landing page with an interactive
                             gallery section.</p>
+                        <ul class="project-info">
+                            <ul class="tools-wrap">
+                                <li class="sub-head">
+                                    <div class="dot"></div>HTML
+                                </li>
+                                <li class="sub-head">
+                                    <div class="dot"></div>CSS
+                                </li>
+                                <li class="sub-head">
+                                    <div class="dot"></div>JAVASCRIPT
+                                </li>
+                            </ul>
+                            <a href="http://" class="btn">live site</a>
+
+                        </ul>
                     </div>
                 </div>
-                <div class="project-link sub-container">
+                <div class="project-link sub-container hidden">
                     <div class="project-img TipCalc-img disp-img">
                         <div class="overlay-link">
                             <a href="#">Github</a>
-                            <a href="https://mellow-mooncake-591708.netlify.app/">live site</a>
+                            <a href="https://zesty-cheesecake-188e90.netlify.app/">live site</a>
                         </div>
                     </div>
                     <div class="project-text">
                         <h2 class="project-title sub-head">Tip Calculator App</h2>
                         <p class="project-description"> A fun Calculator app which can help split bills and also
                             the tip per person.</p>
+                        <ul class="project-info">
+                            <ul class="tools-wrap">
+                                <li class="sub-head">
+                                    <div class="dot"></div>HTML
+                                </li>
+                                <li class="sub-head">
+                                    <div class="dot"></div>CSS
+                                </li>
+                                <li class="sub-head">
+                                    <div class="dot"></div>JAVASCRIPT
+                                </li>
+                            </ul>
+                            <a href="http://" class="btn">live site</a>
+
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div id="row-two" class="row project-wrapper">
-                <div class="project-link sub-container">
+            <div id="row-two" class="row project-wrapper ">
+                <div class="project-link sub-container hidden">
                     <div class="project-img neylo-img disp-img">
                         <div class="overlay-link">
                             <a href="#">Github</a>
@@ -222,9 +274,24 @@
                         <h2 class="project-title sub-head">Model Portfolio Website</h2>
                         <p class="project-description">A single-page portfolio website built with html, css and
                             javascript.</p>
+                        <ul class="project-info">
+                            <ul class="tools-wrap">
+                                <li class="sub-head">
+                                    <div class="dot"></div>HTML
+                                </li>
+                                <li class="sub-head">
+                                    <div class="dot"></div>CSS
+                                </li>
+                                <li class="sub-head">
+                                    <div class="dot"></div>JAVASCRIPT
+                                </li>
+                            </ul>
+                            <a href="http://" class="btn">live site</a>
+
+                        </ul>
                     </div>
                 </div>
-                <div class="project-link sub-container alt">
+                <div class="project-link sub-container alt hidden">
                     <div class="project-img huddle-img disp-img">
                         <div class="overlay-link">
                             <a href="#">Github</a>
@@ -234,9 +301,23 @@
                     <div class="project-text">
                         <h2 class="project-title sub-head"> huddle landing page</h2>
                         <p class="project-description"> A two column responsive Bootstrap landing</p>
+                        <ul class="project-info">
+                            <ul class="tools-wrap">
+                                <li class="sub-head">
+                                    <div class="dot"></div>HTML
+                                </li>
+                                <li class="sub-head">
+                                    <div class="dot"></div>CSS
+                                </li>
+                                <li class="sub-head">
+                                    <div class="dot"></div>JAVASCRIPT
+                                </li>
+                            </ul>
+                            <a href="http://" class="btn">live site</a>
+                        </ul>
                     </div>
                 </div>
-                <div class="project-link sub-container">
+                <div class="project-link sub-container hidden">
                     <div class="project-img interactive-img disp-img">
                         <div class="overlay-link">
                             <a href="#">Github</a>
@@ -246,11 +327,26 @@
                     <div class="project-text">
                         <h2 class="project-title sub-head">Interactive rating component </h2>
                         <p class="project-description"> A rating component</p>
+                        <ul class="project-info">
+                            <ul class="tools-wrap">
+                                <li class="sub-head">
+                                    <div class="dot"></div>HTML
+                                </li>
+                                <li class="sub-head">
+                                    <div class="dot"></div>CSS
+                                </li>
+                                <li class="sub-head">
+                                    <div class="dot"></div>JAVASCRIPT
+                                </li>
+                            </ul>
+                            <a href="http://" class="btn">live site</a>
+
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div id="row-three" class="row project-wrapper">
-                <div class="project-link sub-container">
+            <div id="row-three" class="row project-wrapper hidden">
+                <div class="project-link sub-container hidden">
                     <div class="project-img clipboard-img disp-img">
                         <div class="overlay-link">
                             <a href="#">Github</a>
@@ -260,9 +356,21 @@
                     <div class="project-text">
                         <h2 class="project-title sub-head">Clipboard Landing</h2>
                         <p class="project-description">A Frontend Mentor Challenge</p>
+                        <ul class="project-info">
+                            <ul class="tools-wrap">
+                                <li class="sub-head">
+                                    <div class="dot"></div>HTML
+                                </li>
+                                <li class="sub-head">
+                                    <div class="dot"></div>CSS
+                                </li>
+                            </ul>
+                            <a href="http://" class="btn">live site</a>
+
+                        </ul>
                     </div>
                 </div>
-                <div class="project-link sub-container alt">
+                <div class="project-link sub-container alt hidden">
                     <div class="project-img fylo-img disp-img">
                         <div class="overlay-link">
                             <a href="#">Github</a>
@@ -271,14 +379,27 @@
                     </div>
                     <div class="project-text">
                         <h2 class="project-title sub-head">Fylo Landing </h2>
-                        <p class="project-description">A <a href="httpx://sidehustle.ng"  style="color: var(--white); text-decoration: underline;"> side hustle </a> challenge.</p>
+                        <p class="project-description">An interactive game that can
+                            be used in place of a coin.</p>
+                        <ul class="project-info">
+                            <ul class="tools-wrap">
+                                <li class="sub-head">
+                                    <div class="dot"></div>HTML
+                                </li>
+                                <li class="sub-head">
+                                    <div class="dot"></div>CSS
+                                </li>
+                            </ul>
+                            <a href="http://" class="btn">live site</a>
+
+                        </ul>
                     </div>
                 </div>
-                <div class="project-link sub-container">
+                <div class="project-link sub-container hidden">
                     <div class="project-img joinhigh-img disp-img">
                         <div class="overlay-link">
                             <a href="#">Github</a>
-                            <a href="https://coruscating-marshmallow-2781dc.netlify.app">live site</a>
+                            <a href="#">live site</a>
                         </div>
                     </div>
                     <div class="project-text">
@@ -286,6 +407,20 @@
                         <p class="project-description">//<i>incomplete</i>//. A one page website
                             with a --select podcast-- section
                         </p>
+                        <ul class="project-info">
+                            <ul class="tools-wrap">
+                                <li class="sub-head">
+                                    <div class="dot"></div>HTML
+                                </li>
+                                <li class="sub-head">
+                                    <div class="dot"></div>CSS
+                                </li>
+                                <li class="sub-head">
+                                    <div class="dot"></div>JAVASCRIPT
+                                </li>
+                            </ul>
+                            <a href="http://" class="btn">live site</a>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -298,14 +433,20 @@
         </div>
     </section>
 
-    <section id="footer" class="hidden">
-        <div class="cta" class="hidden">
-            <div class="cta-links">
-                <i class="fa-brands fa-whatsapp fa-2x"><a href="mailto: nwokovictor1@gmail.com"></a></i>
-                <i class="fa-regular fa-envelope fa-2x"><a href="mailto: nwokovictor1@gmail.com"></a></i>
-                <i class="fa-solid fa-phone fa-2x"><a href="tel: 090 7079 4446"></a> </i>
+    <section id="footer" class="hidden ">
+        <div class="cta sub-container hidden ">
+            <p class="cta-text sub-head">Do You wish to hire me, you want some collaboration or you just want to say
+                Hi!. Feel
+                free to "buzz" me.</p>
+            <div class="link-wrap">
+                <div class="cta-links">
+                    <i class="fa-brands fa-whatsapp fa-2x"><a href="mailto: nwokovictor1@gmail.com"></a></i>
+                    <i class="fa-regular fa-envelope fa-2x"><a href="mailto: nwokovictor1@gmail.com"></a></i>
+                    <i class="fa-solid fa-phone fa-2x"><a href="tel: 090 7079 4446"></a> </i>
+                </div>
+                <a href="mailto: nwokovictor1@gmail.com" class="btn">Hire Me</a>
             </div>
-            <a href="mailto: nwokovictor1@gmail.com" class="btn">Hire Me</a>
+
         </div>
         <footer class="footer-wrap">
             <div class="column">
