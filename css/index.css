@@ -92,7 +92,10 @@ a.header-btn {
 
 .about-wrapper .about-text {
     flex-basis: 45%;
-    max-height: 250px;
+    border-top: 3px solid var(--stack400);
+    background-color: var(--black);
+    padding: 0.8rem;
+    border-radius: var(--b-rad);
 }
 
 
@@ -100,17 +103,6 @@ a.header-btn {
     width: 80%;
 }
 
-.about-text .about-links {
-    display: flex;
-    gap: 0.5rem;
-}
-
-.about-text .about-links li {
-    padding: 0.4rem 0.6rem;
-    border: var(--b-wit) solid var(--secondary);
-    color: var(--secondary);
-    text-transform: uppercase;
-}
 
 
 /*  */
@@ -147,7 +139,7 @@ a.header-btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--black);
+    background: linear-gradient(177deg, var(--black), transparent);
     border-radius: var(--b-rad);
 }
 
@@ -169,8 +161,7 @@ a.header-btn {
 .stack-rating .rating {
     width: 15px;
     height: 100px;
-    background-color: var(--bg-secondary);
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 .stack-rating .rating:nth-child(1) {
@@ -259,7 +250,7 @@ a.header-btn {
     opacity: 1;
 }
 
-.project-wrapper .project-link {
+.project-link {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -273,7 +264,7 @@ a.header-btn {
     gap: 4%;
 }
 
-.project-wrapper .project-link.alt {
+.project-link.alt {
     flex-flow: row-reverse nowrap;
     padding: 2rem 1.2rem 2rem 2rem;
 
@@ -281,7 +272,49 @@ a.header-btn {
 
 .project-wrapper .project-link .project-text {
     width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
 }
+
+.project-text .project-info {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 10%;
+    text-transform: uppercase;
+}
+
+.project-info .btn {
+    width: min(100%, 150px);
+    border: 2px solid var(--highlight);
+    background-color: var(--black);
+    color: var(--bg-secondary);
+}
+
+.project-link .project-text .tools-wrap {
+    width: 100%;
+    display: flex;
+    margin: 6px 0;
+    gap: 3%;
+}
+
+.tools-wrap .sub-head {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    text-shadow: 1px 1px var(--clr-secondary);
+}
+
+.tools-wrap .dot {
+    width: 5px;
+    height: 5px;
+    margin-right: 5px;
+    background-color: var(--highlight);
+    border-radius: var(--b-rad);
+}
+
 
 
 .project-wrapper .project-link .project-img {
@@ -292,6 +325,7 @@ a.header-btn {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
+    background-blend-mode: luminosity;
 }
 
 .project-img.space-img {
@@ -352,11 +386,16 @@ a.header-btn {
     opacity: 1;
 }
 
+.project-wrapper .project-link:hover .project-img {
+    transition: all 300ms ease;
+    background-blend-mode: normal;
+}
+
 .project-img .overlay-link a {
     background-color: var(--white);
     color: var(--black);
     padding: 2px 10px;
-    transform: translateY(150px);
+    transform: translateY(50px);
     border-radius: var(--b-rad);
 }
 
@@ -396,11 +435,11 @@ a.header-btn {
 }
 
 .pages div.line {
-    width: 85%;
+    width: 70%;
     border-radius: var(--b-rad);
     border: 0;
     height: 5px;
-    background-color: var(--clr-secondary);
+    background-color: var(--highlight);
     display: none;
     position: absolute;
     z-index: -999;
@@ -437,10 +476,7 @@ a.header-btn {
     justify-content: space-between;
 }
 
-.res-nav .res-btn {
-    padding: 5px 15px;
-    border-radius: var(--b-rad);
-}
+/* .res-nav .res-btn {} */
 
 .container .resume-disp {
     height: 100vh;
@@ -498,10 +534,12 @@ a.header-btn {
 
 
     #about .about-text {
-        flex-basis: 100%;
-        margin: auto;
+        flex-basis: 45%;
     }
 
+    .project-text .project-info {
+        flex-flow: row wrap;
+    }
 
 
     .pages div {
@@ -582,14 +620,11 @@ a.header-btn {
         width: 100%;
     }
 
-
-    #about .about-text {
-        text-align: center;
+    #about .about-wrapper {
+        gap: 0.8rem;
     }
 
-    .about-wrapper .about-text p {
-        margin: auto;
-    }
+
 
     /* stack section */
     .stack .stack-items {
@@ -608,8 +643,8 @@ a.header-btn {
 
     }
 
-    .project-wrapper .project-link.alt,
-    .project-wrapper .project-link {
+    .project-link.alt,
+    .project-link {
         flex-flow: column nowrap;
         min-width: 100%;
         scroll-snap-align: start;
@@ -622,7 +657,7 @@ a.header-btn {
 
     .project-wrapper .project-link .project-img {
         width: 100%;
-        height: 250px;
+        height: 150px;
     }
 
     .pages {
@@ -647,6 +682,7 @@ a.header-btn {
     .stack .stack-items p {
         min-width: 140px;
     }
+
 }
 
 /*  */
