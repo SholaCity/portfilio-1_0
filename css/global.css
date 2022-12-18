@@ -459,7 +459,7 @@ nav .nav_btn div {
 }
 
 .cta .cta-links i {
-    color: var(--stack500);
+    color: var(--white);
 }
 .cta .cta-links a {
     width: min(50px ,20%);
@@ -470,7 +470,7 @@ nav .nav_btn div {
     border-radius: var(--b-rad);
 }
 .cta .cta-links a:hover i {
-    color: var(--white);
+    color: var(--highlight);
 }
 
 
