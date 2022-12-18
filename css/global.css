@@ -459,13 +459,21 @@ nav .nav_btn div {
 }
 
 .cta .cta-links a {
+    width: 100%;
+    height: 100%;
+    color: var(--stack500);
+    border-radius: var(--b-rad);
+background:red;
+}
+.cta .cta-links o {
     width: 50px;
     height: 50px;
     color: var(--stack500);
     border-radius: var(--b-rad);
 }
 
-.cta .cta-links a {
+
+.cta .cta-links o {
     font-size: 1.2rem;
     color: var(--black);
 }
