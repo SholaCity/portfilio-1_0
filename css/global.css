@@ -1,4 +1,4 @@
-To@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
 
 /* 
 font-family: 'Bai Jamjuree', sans-serif;
@@ -463,20 +463,18 @@ nav .nav_btn div {
     height: 100%;
     color: var(--stack500);
     border-radius: var(--b-rad);
-background:red;
+color: red;
 }
 .cta .cta-links a {
-    width: 50px;
+    width: min(50px ,20%);
     height: 50px;
+    display: flex;
+    justify-content: center;
     color: var(--stack500);
     border-radius: var(--b-rad);
+    background: green;
 }
 
-
-.cta .cta-links o {
-    font-size: 1.2rem;
-    color: var(--black);
-}
 
 #footer .cta>* {
     margin: 0.9rem auto;
@@ -488,11 +486,6 @@ background:red;
     background-color: var(--black);
     border: var(--b-wit) solid var(--bg-tertiary);
     color: var(--bg-tertiary);
-}
-
-#footer .cta a:hover {
-    color: var(--white);
-    background-color: var(--bg-tertiary);
 }
 
 #footer .footer-wrap {
