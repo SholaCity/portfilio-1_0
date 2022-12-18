@@ -459,20 +459,18 @@ nav .nav_btn div {
 }
 
 .cta .cta-links i {
-    width:100% ;
-    height: 100%;
     color: var(--stack500);
-    border-radius: var(--b-rad);
-color: red;
 }
 .cta .cta-links a {
     width: min(50px ,20%);
     height: 50px;
     display: flex;
     justify-content: center;
-    color: var(--stack500);
+    align-items: center;
     border-radius: var(--b-rad);
-    background: green;
+}
+.cta .cta-links a:hover i {
+    color: var(--white);
 }
 
 
