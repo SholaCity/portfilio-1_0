@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+To@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
 
 /* 
 font-family: 'Bai Jamjuree', sans-serif;
@@ -458,14 +458,14 @@ nav .nav_btn div {
     gap: 10px;
 }
 
-.cta .cta-links a {
-    width: 100%;
+.cta .cta-links i {
+    width:100% ;
     height: 100%;
     color: var(--stack500);
     border-radius: var(--b-rad);
 background:red;
 }
-.cta .cta-links o {
+.cta .cta-links a {
     width: 50px;
     height: 50px;
     color: var(--stack500);
