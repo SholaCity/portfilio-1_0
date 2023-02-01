@@ -83,7 +83,7 @@ a.header-btn {
 
 #about .about-wrapper {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     margin-inline: auto;
     gap: 1rem;
     justify-content: space-around;
@@ -91,7 +91,7 @@ a.header-btn {
 }
 
 .about-wrapper .about-text {
-    flex-basis: 24%;
+   width: min(250px, 45%)! important;
     max-height: 180px;
     display: flex;
     flex-flow: column nowrap;
